@@ -1,0 +1,11 @@
+mixin menuStiky(links,logo)
+  .menu
+    .menu-contentLogo
+      a(href="#inicio").menu-logoLink
+        img(src= logo, alt="").menu-logo
+      //- .menu-logo
+    nav.menu-navegacion
+      ul.menu-ContentItem
+        each link in links
+          li.menu-item
+            a(href= link[0]).menu-link= link[1]

@@ -1,0 +1,18 @@
+@mixin cardAnimation($selector){
+  .#{$selector}{
+    opacity: 0;
+    transform: translateY(20%);
+    animation-duration: .8s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    &.animationtranslatexOpaciti {
+      animation-name: translatexOpaciti;
+    }
+  }
+  @keyframes translatexOpaciti {
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+}

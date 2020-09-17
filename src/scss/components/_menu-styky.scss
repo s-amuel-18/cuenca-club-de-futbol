@@ -1,0 +1,51 @@
+.menu {
+  width: 100%;
+  height: $height-menu;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  position: fixed;
+  background-color: $bcg-menuStiky;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  transition: background .4s;
+  &.activeBcgColor{
+    background-color: rgba(0, 0, 0, 0.8);
+  }
+  &-contentLogo {
+    height: 100%;
+    width: 10%;
+    display: flex;
+    // justify-content: center;
+    align-items: center;
+  }
+  &-logoLink {
+    width: 50px;
+    
+  }
+  &-logo{
+    width: 100%;
+  }
+  &-navegacion {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // align-items: center;
+    justify-content: center;
+  }
+  &-ContentItem {
+    width: 100%;
+    display: flex;
+    list-style-type: none;
+    justify-content: flex-end;
+  }
+  &-item{
+    margin-left: 16px;
+  }
+  &-link{
+    color: $color-letras;
+    font-size: $size-link;
+  }
+}

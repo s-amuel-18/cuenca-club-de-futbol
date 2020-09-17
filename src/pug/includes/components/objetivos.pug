@@ -1,0 +1,12 @@
+mixin objetivos(titulo,objetivos,imgEstrella)
+  section.objetivos#objetivo
+    .objetivos-content
+      .objetivos-contentTitle
+        h2.objetivos-title= titulo
+          img(src= imgEstrella, alt="").objetivos-resaltadorEstrella.estrellaDerecha
+          img(src= imgEstrella, alt="").objetivos-resaltadorEstrella.estrellaIzquierda
+      .objetivos-grid
+        each objetivo in objetivos
+          .objetivos-contentObjetivo
+            img(src=objetivo[1], alt="").objetivos-svg
+            p.objetivos-description= objetivo[0]

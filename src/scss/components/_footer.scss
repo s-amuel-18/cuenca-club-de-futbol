@@ -1,0 +1,85 @@
+.footer {
+  width: 100%;
+  min-height: 100vh;
+  position: relative;
+  background: {
+    image:url("./img/img-footer.png");
+    position: center;
+    size:cover;
+    repeat:no-repeat;
+  };
+  &-menu {
+    width: 100%;
+    height: $height-menu;
+    // background-color: #fff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-nav,&-contentLogo,&-contact {
+    height: 100%;
+  }
+  &-nav,&-contentLogo {
+    width: 35%;
+  }
+  &-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &-contentItem{
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+  }
+  &-item {
+    margin-right: 16px;
+  }
+  &-link {
+    font-size: $size-link;
+    color: $color-letras;
+
+  }
+  &-contentLogo {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &-linkLogo{
+    width: 50px;
+
+  }
+  &-logo {
+    width: 100%;
+  }
+  &-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+  }
+  &-socialMedia {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+    transition: background .4s;
+    &:last-of-type {
+      margin: 0;
+    }
+    &:hover{
+      background-color: rgba(255, 255, 255, 0.157);
+    }
+  }
+  &-svgContact {
+    height: 40%;
+    // fill: #fff;
+  }
+}

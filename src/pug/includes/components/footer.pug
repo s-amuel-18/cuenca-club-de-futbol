@@ -1,0 +1,16 @@
+mixin footer(links,logo,socialMedia,linkLogo)
+  footer.footer
+    .footer-menu
+      nav.footer-nav
+        ul.footer-contentItem
+          each link in links
+            li.footer-item
+              a.footer-link(href= link[0])= link[1]
+      .footer-contact
+        each media in socialMedia
+          a(href= media[0]).footer-socialMedia
+            img(src= media[1], alt="",target="_blank").footer-svgContact
+      .footer-contentLogo
+        a(href= linkLogo).footer-linkLogo
+          img(src= logo, alt="").footer-logo
+          

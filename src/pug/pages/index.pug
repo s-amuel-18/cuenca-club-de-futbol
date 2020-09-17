@@ -1,0 +1,19 @@
+extends ../includes/layout.pug
+include ../includes/components/menu-stiky.pug
+include ../includes/components/objetivos.pug
+include ../includes/components/footer.pug
+block metatags
+  -var title = '#POR50AÑOSDEGLORIA'
+  -var description = 'Boilerplate para el desarrollo de proyectos Frontend basado en Componentes de @jonmircha'
+  title= title
+  meta(name="description", content=description)
+  meta(name="application-name", content=title)
+block content
+  main.home-page
+    +menuStiky([[`#inicio`,`Inicio`],[`#objetivo`,`objetivo`]],`./img/logo.svg`)
+    header.header#inicio
+      .header-poster
+      .header-contentLogo
+        img(src="./img/logo.svg", alt="").header-logo
+    +objetivos(`Objetivo`,[[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/apreton de manos.svg`],[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/deporte.svg`],[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/Grupo 35.svg`],[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/Grupo 36.svg`],[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/XMLID_1_.svg`],[`Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio impedit dignissimos id dolorum?`,`./img/surface1.svg`]],`../src/img/star.svg`)
+    +footer([[`#inicio`,`Inicio`],[`#objetivo`,`objetivo`]],`./img/logo pequeño.svg`,[[`dasdasd`,`./img/facebook-f.svg`],[`dsadada`,`./img/instagram.svg`]],`#inicio`)
